@@ -5,7 +5,7 @@
 @endsection
 
 @section('meta')
-<meta property="og:url"                content="https://www.fliptop.com.ph" />
+<meta property="og:url"                content="https://tryouts.fliptop.com.ph" />
 <meta property="og:title"              content="{{ setting('site.title') }}" />
 <meta property="og:description"        content="{{ setting('site.description') }}" />
 <meta property="og:image"              content="{{ URL::asset('/img/bg_og.jpg') }}" />
