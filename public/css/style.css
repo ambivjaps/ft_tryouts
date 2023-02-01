@@ -1,0 +1,125 @@
+@font-face {
+	font-family: MicroExtendFLF;
+	src: url("../font/micro.ttf");
+}
+
+@font-face {
+	font-family: MicroExtendFLF Bold;
+	src: url("../font/micro_bold.ttf");
+}
+
+@font-face {
+	font-family: Exo;
+	src: url("../font/exo2.ttf");
+}
+
+* {
+	font-family: Exo;
+	color: #FFFFFF;
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: MicroExtendFLF;
+}
+
+body {
+	background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.9) 100%), url("../img/battles.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	background-color: #000000 !important;
+	padding-top: 85px;
+	overflow-x: hidden;
+}
+
+footer {
+	background-image: url("../img/bg_foot.jpg");
+	overflow: hidden;
+	width: 100%;
+	color: #FFFFFF;
+	padding: 30px;
+}
+
+nav {
+	padding: 20px;
+}
+
+.main-nav .nav-link {
+	border-radius: 15px;
+	font-size: 15px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	padding: 6px;
+}
+
+.main-nav h3 {
+	font-family: MicroExtendFLF Bold;
+    color: #E8BF00 !important;
+}
+
+.navbar {
+	background-image: url("../img/bg_nav.jpg");
+}
+
+.navbar-brand:hover {
+    transition: all .2s ease;
+    transform: scale(0.95); 
+}
+
+.soc-nav {
+	flex-direction: row !important;
+}
+
+.soc-nav i {
+	color: #E8BF00;
+}
+
+.soc-nav i:hover {
+	transition: .2s;
+	color: #B49300;
+}
+
+.soc-nav .nav-link {
+	padding-right: 0.8em !important;
+}
+
+.ft-soc a {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+.ft-soc i:hover {
+	transition: .2s;
+	color: #E8BF00;
+}
+
+.ft-part {
+	font-family: MicroExtendFLF Bold;
+	color: #E8BF00;
+}
+
+.ft-card-ins {
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    border: 7px solid #0a0a0a;
+    box-shadow: inset 0 0 2.5px 2px rgba(0,0,0,0);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #E8BF00;
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(255, 227, 100);
+    border-radius: 3px;
+}
