@@ -25,7 +25,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 body {
-	background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.9) 100%), url("../img/battles.jpg");
+	background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.9) 100%), url("../img/widget/crowd.jpg");
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: center;
@@ -44,6 +44,10 @@ footer {
 
 nav {
 	padding: 20px;
+}
+
+textarea {
+	resize: none;
 }
 
 .main-nav .nav-link {
@@ -100,9 +104,20 @@ nav {
 	color: #E8BF00;
 }
 
-.ft-card-ins {
+.ft-poi-ins {
+	background-image: linear-gradient(to bottom, rgba(15, 15, 15, 0.9) 0%,rgba(0,0,0,0.9) 100%), url("../img/bg_foot.jpg");
+	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
+}
+
+.ft-bcrumb a, .ft-bcrumb i {
+	color: #E8BF00;
+	text-decoration: none;
+}
+
+.ft-bcrumb a:hover, .ft-bcrumb i:hover {
+	color: rgb(255, 227, 100);
 }
 
 ::-webkit-scrollbar {
