@@ -7,54 +7,54 @@
           <p class="d-block mb-3 text-muted">&copy; {{ now()->year }} FlipTop Kru Corp.</p>
         </div>
         <div class="col-6 col-md">
-          <h5>Explore</h5>
-          <ul class="list-unstyled text-small">
-            <li class="mb-1"><a class="link-warning text-decoration-none" href="{{ URL::asset('/') }}">Home</a></li>
-            <li class="mb-1"><a class="link-warning text-decoration-none" href="{{ URL::asset('/articles') }}">Articles</a></li>
-            <li class="mb-1"><a class="link-warning text-decoration-none" href="{{ URL::asset('/emcees') }}">Emcees</a></li>
-            <li class="mb-1"><a class="link-warning text-decoration-none" href="{{ URL::asset('/tournaments') }}">Tournaments</a></li>
-            <li class="mb-1"><a class="link-warning text-decoration-none" href="{{ URL::asset('/videos') }}">Videos</a></li>
-            <li class="mb-1"><a class="link-warning text-decoration-none" href="{{ URL::asset('/lyrics') }}">Lyrics</a></li>
-          </ul>
-        </div>
-        <div class="col-6 col-md">
-          <h5>Emcees</h5>
-          <ul class="list-unstyled text-small">
-            <li class="mb-1"><a class="link-warning text-decoration-none" href="{{ URL::asset('/emcees/division/metro-manila') }}">Metro Manila</a></li>
-            <li class="mb-1"><a class="link-warning text-decoration-none" href="{{ URL::asset('/emcees/division/central-luzon') }}">Central Luzon</a></li>
-            <li class="mb-1"><a class="link-warning text-decoration-none" href="{{ URL::asset('/emcees/division/calabarzon') }}">Calabarzon</a></li>
-            <li class="mb-1"><a class="link-warning text-decoration-none" href="{{ URL::asset('/emcees/division/visayas') }}">Visayas</a></li>
-            <li class="mb-1"><a class="link-warning text-decoration-none" href="{{ URL::asset('/emcees/division/mindanao') }}">Mindanao</a></li>
-          </ul>
-        </div>
-        <div class="col-6 col-md">
-          <h5>Videos</h5>
-          <ul class="list-unstyled text-small">
-            <li class="mb-1"><a class="link-warning text-decoration-none" href="{{ URL::asset('/videos/battle') }}">Battles</a></li>
-            <li class="mb-1"><a class="link-warning text-decoration-none" href="{{ URL::asset('/videos/perf') }}">Performances</a></li>
-            <li class="mb-1"><a class="link-warning text-decoration-none" href="{{ URL::asset('/videos/segment') }}">Segments</a></li>
-          </ul>
-        </div>
-        <div class="col-6 col-md">
-          <h5>About</h5>
-          <ul class="list-unstyled text-small">
-            <li class="mb-1"><a class="link-warning text-decoration-none" href="{{ URL::asset('/about') }}">The League</a></li>
-            <li class="mb-1"><a class="link-warning text-decoration-none" href="https://tryouts.fliptop.com.ph">Tryouts</a></li>
-            <li class="mb-1"><a class="link-warning text-decoration-none" href="{{ URL::asset('/promos') }}">Promos</a></li>
-          </ul>
-        </div>
-        <div class="col-12 col-md mt-2">
-          <div class="ft-soc">
-  				  <a href="{{ setting('site.fb_link') }}" target="_blank"> <i class="fab fa-facebook fa-lg me-2"></i></a>
-  				  <a href="{{ setting('site.tw_link') }}" target="_blank"> <i class="fab fa-twitter fa-lg me-2"></i></a>
-  				  <a href="{{ setting('site.yt_link') }}" target="_blank"> <i class="fab fa-youtube fa-lg me-2"></i></a>
-  				  <a href="{{ setting('site.ig_link') }}" target="_blank"> <i class="fab fa-instagram fa-lg me-2"></i></a>
-  				  <a href="{{ setting('site.patreon_link') }}" target="_blank"> <i class="fab fa-patreon fa-lg me-2"></i></a>
-          </div>
-    			<hr>
-    			<small class="d-block">Become a partner:</small>
-    			<h5 class="ft-part">partner@fliptop.com.ph</h5>
-        </div>
+        <h5>Explore</h5>
+					<ul class="list-unstyled text-small">
+						<li class="mb-1"><a class="link-warning text-decoration-none" href="https://www.fliptop.com.ph">Home</a></li>
+						<li class="mb-1"><a class="link-warning text-decoration-none" href="https://www.fliptop.com.ph/articles">Articles</a></li>
+						<li class="mb-1"><a class="link-warning text-decoration-none" href="https://www.fliptop.com.ph/emcees">Emcees</a></li>
+            <li class="mb-1"><a class="link-warning text-decoration-none" href="https://www.fliptop.com.ph/tournaments">Tournaments</a></li>
+						<li class="mb-1"><a class="link-warning text-decoration-none" href="https://www.fliptop.com.ph/videos">Videos</a></li>
+						<li class="mb-1"><a class="link-warning text-decoration-none" href="https://www.fliptop.com.ph/lyrics">Lyrics</a></li>
+					</ul>
+					</div>
+					<div class="col-6 col-md">
+					<h5>Emcees</h5>
+					<ul class="list-unstyled text-small">
+						<li class="mb-1"><a class="link-warning text-decoration-none" href="https://www.fliptop.com.ph/emcees/division/metro-manila">Metro Manila</a></li>
+						<li class="mb-1"><a class="link-warning text-decoration-none" href="https://www.fliptop.com.ph/emcees/division/central-luzon">Central Luzon</a></li>
+						<li class="mb-1"><a class="link-warning text-decoration-none" href="https://www.fliptop.com.ph/emcees/division/calabarzon">Calabarzon</a></li>
+						<li class="mb-1"><a class="link-warning text-decoration-none" href="https://www.fliptop.com.ph/emcees/division/visayas">Visayas</a></li>
+						<li class="mb-1"><a class="link-warning text-decoration-none" href="https://www.fliptop.com.ph/emcees/division/mindanao">Mindanao</a></li>
+					</ul>
+					</div>
+					<div class="col-6 col-md">
+					<h5>Videos</h5>
+					<ul class="list-unstyled text-small">
+						<li class="mb-1"><a class="link-warning text-decoration-none" href="https://www.fliptop.com.ph/videos/battle">Battles</a></li>
+						<li class="mb-1"><a class="link-warning text-decoration-none" href="https://www.fliptop.com.ph/videos/perf">Performances</a></li>
+						<li class="mb-1"><a class="link-warning text-decoration-none" href="https://www.fliptop.com.ph/videos/segment">Segments</a></li>
+					</ul>
+					</div>
+					<div class="col-6 col-md">
+					<h5>About</h5>
+					<ul class="list-unstyled text-small">
+						<li class="mb-1"><a class="link-warning text-decoration-none" href="https://www.fliptop.com.ph/about">The League</a></li>
+						<li class="mb-1"><a class="link-warning text-decoration-none" href="https://tryouts.fliptop.com.ph">Tryouts</a></li>
+						<li class="mb-1"><a class="link-warning text-decoration-none" href="https://www.fliptop.com.ph/promos">Promos</a></li>
+					</ul>
+					</div>
+					<div class="col-12 col-md mt-2">
+					<div class="ft-soc">
+								<a href="https://www.facebook.com/fliptop.battleleague" target="_blank"> <i class="fab fa-facebook fa-lg me-2"></i></a>
+								<a href="https://www.twitter.com/FlipTop_Battles" target="_blank"> <i class="fab fa-twitter fa-lg me-2"></i></a>
+								<a href="https://www.youtube.com/fliptopbattles" target="_blank"> <i class="fab fa-youtube fa-lg me-2"></i></a>
+								<a href="https://www.instagram.com/fliptopbattles" target="_blank"> <i class="fab fa-instagram fa-lg me-2"></i></a>
+								<a href="https://www.patreon.com/fliptop" target="_blank"> <i class="fab fa-patreon fa-lg me-2"></i></a>
+					</div>
+            <hr>
+            <small class="d-block">Become a partner:</small>
+            <h5 class="ft-part">partner@fliptop.com.ph</h5>
+      </div>  
     </div>
   </div>
 </footer>
