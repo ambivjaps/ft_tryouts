@@ -83,8 +83,8 @@ class ApplicantController extends Controller
     public function postStepThree(Request $request)
     {
         $validatedData = $request->validate([
-            'lyric_song' => 'required|max:255',
-            'lyric_battle' => 'required|max:255',
+            'lyric_song' => 'required|min:100|max:255',
+            'lyric_battle' => 'required|min:100|max:255',
             'link_song' => 'required',
             'link_battle' => 'required',
             'link_others' => 'required|max:100',
