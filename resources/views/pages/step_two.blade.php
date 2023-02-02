@@ -33,12 +33,12 @@
 
         <div class="col-md-12">
             <label for="alias" class="form-label">Alias/Emcee Name</label>
-            <input type="text" value="{{ $applicants->alias ?? '' }}" id="alias" name="alias" class="form-control" placeholder="(ex. MC Hotdog)">
+            <input type="text" value="{{ $applicant->alias ?? '' }}" id="alias" name="alias" class="form-control" placeholder="(ex. MC Hotdog)">
         </div>
 
         <div class="col-md-6">
             <label for="reppin" class="form-label">Reppin</label>
-            <input type="text" value="{{ $applicants->reppin ?? '' }}" id="reppin" name="reppin" class="form-control" placeholder="Enter your crew/affiliations here.">
+            <input type="text" value="{{ $applicant->reppin ?? '' }}" id="reppin" name="reppin" class="form-control" placeholder="Enter your crew/affiliations here.">
         </div>
 
         <div class="col-md-6">

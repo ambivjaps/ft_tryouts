@@ -34,29 +34,29 @@
 
         <div class="col-md-6">
             <label for="lyric_song" class="form-label">Lyrics (16 Bars for Song)</label>
-            <textarea class="form-control" value="{{ $applicants->lyric_song ?? '' }}" id="lyric_song" name="lyric_song" rows="10" placeholder="Can be same as video link."></textarea>
+            <textarea class="form-control" value="{{ $applicant->lyric_song ?? '' }}" id="lyric_song" name="lyric_song" rows="10" placeholder="Can be same as video link."></textarea>
         </div>
 
         <div class="col-md-6">
             <label for="lyric_battle" class="form-label">Lyrics (16 Bars for Imaginary Battle of FlipTop Emcee)</label>
-            <textarea class="form-control" value="{{ $applicants->lyric_battle ?? '' }}" id="lyric_battle" name="lyric_battle" rows="10" placeholder="Can be same as video link."></textarea>
+            <textarea class="form-control" value="{{ $applicant->lyric_battle ?? '' }}" id="lyric_battle" name="lyric_battle" rows="10" placeholder="Can be same as video link."></textarea>
         </div><hr>
 
         <h3> Video Links </h3>
 
         <div class="col-md-6">
             <label for="link_song" class="form-label">Video Link (16 Bars for Song)</label>
-            <input type="text" value="{{ $applicants->link_song ?? '' }}" id="link_song" name="link_song" class="form-control" placeholder="Use #FlipTopPOI7.">
+            <input type="text" value="{{ $applicant->link_song ?? '' }}" id="link_song" name="link_song" class="form-control" placeholder="Use #FlipTopPOI7.">
         </div>
 
         <div class="col-md-6">
             <label for="link_battle" class="form-label">Video Link (16 Bars for Battle, Acapella)</label>
-            <input type="text" value="{{ $applicants->link_battle ?? '' }}" id="link_battle" name="link_battle" class="form-control" placeholder="Use #FlipTopPOI7.">
+            <input type="text" value="{{ $applicant->link_battle ?? '' }}" id="link_battle" name="link_battle" class="form-control" placeholder="Use #FlipTopPOI7.">
         </div>
 
         <div class="col-md-12">
             <label for="link_others" class="form-label">Video Links (Past Music & Battles)</label>
-            <textarea class="form-control" value="{{ $applicants->link_others ?? '' }}" id="link_others" name="link_others" rows="3" placeholder="Enter relevant links here."></textarea>
+            <textarea class="form-control" value="{{ $applicant->link_others ?? '' }}" id="link_others" name="link_others" rows="3" placeholder="Enter relevant links here."></textarea>
         </div><hr>
 
         <div class="col-12">
