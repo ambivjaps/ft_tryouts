@@ -34,7 +34,7 @@
                 </ol>
                 <p>C. Cut off for submissions is on April 28, 2018.</p>
                 <p>D. Stay tuned for details and updates on the Second Leg of the Tryouts - Regional Tournaments!</p>
-                <a class="btn btn-lg btn-warning mt-3" href="{{ URL::asset('/form/step-one') }}" role="button">Apply for Tryouts</a>
+                <a class="btn btn-lg btn-warning mt-3" href="{{ route('pages.step_one') }}" role="button">Apply for Tryouts</a>
             </div>
         </div>
     </div>

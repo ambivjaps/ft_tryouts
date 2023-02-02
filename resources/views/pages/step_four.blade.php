@@ -19,10 +19,31 @@
         </small>
     </div><hr>
 
-    <form class="row g-3">
+    <form class="row g-3" action="{{ route('pages.step_four.post') }}" method="post">
         <h3> Step#4 - Verify Information </h3>
 
+        <p> First Name: {{ $applicant->first_name }} </p>
+        <p> Last Name: {{ $applicant->first_name }} </p>
+        <p> Birthday: {{ $applicant->bday }} </p>
+        <p> Address: {{ $applicant->address }} </p>
+
+        <p> E-mail Address: {{ $applicant->cred_fb }} </p>
+        <p> Facebook Account: {{ $applicant->cred_fb }} </p>        
+        <p> Cellphone Number: {{ $applicant->cred_cp }} </p>
+        
+        <p> Alias: {{ $applicant->alias }} </p>
+        <p> Reppin: {{ $applicant->reppin }} </p>
+        <p> Division: {{ $applicant->division }} </p>
+        
+        <p> Lyrics (Song): {{ $applicant->lyric_song }} </p>
+        <p> Lyrics (Battle): {{ $applicant->lyric_battle }} </p>
+        
+        <p> Link (Song): {{ $applicant->link_song }} </p>
+        <p> Link (Battle): {{ $applicant->link_battle }}</p>
+        <p> Link (Others):  {{ $applicant->link_others }}</p>
+
         <div class="col-12">
+            <a href="{{ route('pages.step_three') }}" class="btn btn-danger pull-right">Previous</a>
             <button type="submit" class="btn btn-lg btn-warning float-end my-3">Submit Application </i></button>
         </div>
     </form>

@@ -13,6 +13,7 @@ class Applicant extends Model
         'last_name',
         'alias',
         'reppin',
+        'division',
         'bday',
         'address',
         'cred_email',
@@ -22,9 +23,6 @@ class Applicant extends Model
         'lyric_battle',
         'link_song',
         'link_battle',
-        'link_others',
-        'status',
-        'created_at',
-        'updated_at'
+        'link_others'
     ];
 }

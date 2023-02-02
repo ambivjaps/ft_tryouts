@@ -17,22 +17,33 @@
         </small>
     </div><hr>
 
-    <form class="row g-3">
+    <form class="row g-3" action="{{ route('pages.step_two.post') }}" method="post">
+        @csrf
         <h3> Step#2 - Emcee Information </h3>
+
+        @if ($errors->any())
+            <div class="alert alert-danger">
+                <ul>
+                    @foreach ($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
+            </div>
+        @endif
 
         <div class="col-md-12">
             <label for="alias" class="form-label">Alias/Emcee Name</label>
-            <input type="text" id="alias" class="form-control" placeholder="(ex. MC Hotdog)">
+            <input type="text" value="{{{ $applicants->alias ?? '' }}}" id="alias" name="alias" class="form-control" placeholder="(ex. MC Hotdog)">
         </div>
 
         <div class="col-md-6">
             <label for="reppin" class="form-label">Reppin</label>
-            <input type="text" id="reppin" class="form-control" placeholder="Enter your crew/affiliations here.">
+            <input type="text" value="{{{ $applicants->reppin ?? '' }}}" id="reppin" name="reppin" class="form-control" placeholder="Enter your crew/affiliations here.">
         </div>
 
         <div class="col-md-6">
             <label for="division" class="form-label">Division</label>
-            <select id="division" class="form-select">
+            <select id="division" name="division" value="{{{ $applicants->division ?? '' }}}" class="form-select">
                 <option selected>Select division</option>
                 <option>Metro Manila</option>
                 <option>Calabarzon</option>
@@ -43,7 +54,8 @@
         </div>
 
         <div class="col-12">
-            <button type="submit" class="btn btn-lg btn-warning float-end my-3">Next </i></button>
+            <a href="{{ route('pages.step_one') }}" class="btn btn-danger pull-right">Previous</a>
+            <button type="submit" class="btn btn-lg btn-warning float-end my-3">Next</button>
         </div>
     </form>
 </div>
