@@ -22,7 +22,7 @@ class Applicants extends BaseDimmer
      */
     public function run()
     {
-        $count = \App\Applicant::count();
+        $count = \App\Models\Applicant::count();
         $string = "Applicants";
 
         return view('voyager::dimmer', array_merge($this->config, [
