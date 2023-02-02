@@ -109,7 +109,7 @@ class ApplicantController extends Controller
   
         $request->session()->forget('applicant');
 
-        return redirect()->route('pages.index');
+        return redirect()->route('pages.index')->with('success', 'The entry has been submitted.');
     }
 
 }

@@ -18,8 +18,8 @@
 
 <div class="container my-5">
 
-    @if (Session::has('message'))
-        <div class="alert alert-info">{{ Session::get('message') }}</div>
+    @if (Session::has('success'))
+        <div class="alert alert-info">{{ Session::get('success') }}</div>
     @endif
     
     <div class="h-100 p-5 text-white bg-dark rounded-2 ft-poi-ins">
