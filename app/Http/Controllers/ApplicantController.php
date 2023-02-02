@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Applicant;
 use Illuminate\Http\Request;
+use App\Models\Applicant;
 
 class ApplicantController extends Controller
 {
@@ -35,12 +35,10 @@ class ApplicantController extends Controller
  
         if (empty($request->session()->get('applicant'))){
             $applicant = new Applicant();
-            $applicant->fill($validatedData);
             $request->session()->put('applicant', $applicant);
 
         } else {
             $applicant = $request->session()->get('applicant');
-            $applicant->fill($validatedData);
             $request->session()->put('applicant', $applicant);
         }
 
@@ -65,7 +63,6 @@ class ApplicantController extends Controller
         ]);
 
         $applicant = $request->session()->get('applicant');
-        $applicant->fill($validatedData);
         $request->session()->put('applicant', $applicant);
   
         return redirect()->route('pages.step_three');
@@ -83,15 +80,14 @@ class ApplicantController extends Controller
     public function postStepThree(Request $request)
     {
         $validatedData = $request->validate([
-            'lyric_song' => 'required|min:100|max:255',
-            'lyric_battle' => 'required|min:100|max:255',
+            'lyric_song' => 'required|min:100|max:3000',
+            'lyric_battle' => 'required|min:100|max:3000',
             'link_song' => 'required',
             'link_battle' => 'required',
             'link_others' => 'required|max:100',
         ]);
 
         $applicant = $request->session()->get('applicant');
-        $applicant->fill($validatedData);
         $request->session()->put('applicant', $applicant);
   
         return redirect()->route('pages.step_four');

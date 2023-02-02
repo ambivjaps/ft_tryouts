@@ -1,7 +1,7 @@
 <?php
 
-use App\Http\Controllers\ApplicantController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ApplicantController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,7 +17,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [ApplicantController::class,'index'])->name('pages.index');
 
 /* Form */
-
 Route::get('form/step-one', [ApplicantController::class,'createStepOne'])->name('pages.step_one');
 Route::post('form/step-one', [ApplicantController::class,'postStepOne'])->name('pages.step_one.post');
 
@@ -31,7 +30,6 @@ Route::get('form/step-four', [ApplicantController::class,'createStepFour'])->nam
 Route::post('form/step-four', [ApplicantController::class,'postStepFour'])->name('pages.step_four.post');
 
 /* Voyager */
-
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
