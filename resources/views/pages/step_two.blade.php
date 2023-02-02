@@ -20,17 +20,17 @@
     <form class="row g-3">
         <h3> Step#2 - Emcee Information </h3>
 
-        <div class="col-md-4">
+        <div class="col-md-12">
             <label for="alias" class="form-label">Alias/Emcee Name</label>
             <input type="text" id="alias" class="form-control" placeholder="(ex. MC Hotdog)">
         </div>
 
-        <div class="col-md-4">
-            <label for="reppin" class="form-label">Reppin/Affiliations</label>
+        <div class="col-md-6">
+            <label for="reppin" class="form-label">Reppin</label>
             <input type="text" id="reppin" class="form-control" placeholder="Enter your crew/affiliations here.">
         </div>
 
-        <div class="col-md-4">
+        <div class="col-md-6">
             <label for="division" class="form-label">Division</label>
             <select id="division" class="form-select">
                 <option selected>Select division</option>

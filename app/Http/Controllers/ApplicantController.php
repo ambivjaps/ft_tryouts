@@ -26,13 +26,13 @@ class ApplicantController extends Controller
         $validatedData = $request->validate([
             'first_name' => 'required',
             'last_name' => 'required',
-            'bday' => 'required',
+            'bday' => 'required|date_format:m/d/Y',
             'address' => 'required',
-            'cred_email' => 'required',
+            'cred_email' => 'required|email',
             'cred_fb' => 'required',
-            'cred_cp' => 'required|numeric',
+            'cred_cp' => 'required|numeric|max:15',
         ]);
-  
+ 
         if (empty($request->session()->get('applicant'))){
             $applicant = new Applicant();
             $applicant->fill($validatedData);
@@ -83,11 +83,11 @@ class ApplicantController extends Controller
     public function postStepThree(Request $request)
     {
         $validatedData = $request->validate([
-            'lyric_song' => 'required',
-            'lyric_battle' => 'required',
+            'lyric_song' => 'required|max:255',
+            'lyric_battle' => 'required|max:255',
             'link_song' => 'required',
             'link_battle' => 'required',
-            'link_others' => 'required',
+            'link_others' => 'required|max:100',
         ]);
 
         $applicant = $request->session()->get('applicant');
