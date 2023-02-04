@@ -12,7 +12,7 @@
                 <p>Step#1</p>
             </div>
             <div class="stepwizard-step">
-                <a href="#step-2" type="button" class="btn {{ $currentStep != 2 ? 'btn-secondary' : 'btn-warning' }}">2</a>
+                <a href="#step-2" type="button" class="btn {{ $currentStep != 2 ? 'btn-secondary' : 'btn-warning' }}" disabled="disabled">2</a>
                 <p>Step#2</p>
             </div>
             <div class="stepwizard-step">
