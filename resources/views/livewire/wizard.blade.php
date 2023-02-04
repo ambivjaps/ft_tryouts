@@ -56,7 +56,7 @@
         </div>
         <div class="col-md-4">
             <label for="personalFB">Facebook Account</label>
-            <input type="text" wire:model="cred_fb" class="form-control" id="personalFB" placeholder="Enter your Facebook account link here."/>
+            <input type="text" wire:model="cred_fb" class="form-control" id="personalFB" placeholder="Enter your Facebook profile link here."/>
             @error('cred_fb') <div class="alert alert-danger mt-3"> {{ $message }} </div> @enderror
         </div>
         <div class="col-md-4">
@@ -155,7 +155,7 @@
                     <td><strong>{{$cred_email}}</strong></td>
                 </tr>
                 <tr>
-                    <td>Facebook Profile Link:</td>
+                    <td>Facebook Account:</td>
                     <td><strong>{{$cred_fb}}</strong></td>
                 </tr>
                 <tr>
