@@ -26,4 +26,6 @@ class Applicant extends Model
         'link_battle',
         'link_others'
     ];
+
+    public $allow_export_all = true;
 }
