@@ -84,7 +84,7 @@
         </div>
         <div class="col-md-12">
             <label for="emceeDivision">Division</label>
-            <select id="emceeDivision" wire:model="division" class="form-select">
+            <select class="form-select" id="emceeDivision" wire:model="division">
                 <option selected>Select division</option>
                 <option>Metro Manila</option>
                 <option>Calabarzon</option>

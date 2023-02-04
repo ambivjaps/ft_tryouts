@@ -50,6 +50,10 @@ textarea {
 	resize: none;
 }
 
+option {
+	color: #000000;
+}
+
 .main-nav .nav-link {
 	border-radius: 15px;
 	font-size: 15px;
