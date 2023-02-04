@@ -16,7 +16,7 @@
 
 @section('content')
 
-<div class="container my-5">
+<div class="container-xxl my-5">
 
     <div class="h-100 p-5 text-white bg-dark rounded-2 ft-poi-ins">
         <div class="row">
