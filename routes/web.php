@@ -16,6 +16,10 @@ use App\Http\Controllers\ApplicantController;
 
 Route::get('/', [ApplicantController::class,'index'])->name('pages.index');
 
+Route::get('form', function () {
+    return view('pages.form');
+});
+
 /* Voyager */
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
