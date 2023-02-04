@@ -14,9 +14,11 @@ use App\Http\Controllers\ApplicantController;
 |
 */
 
-Route::get('/', [ApplicantController::class,'index'])->name('pages.index');
+Route::get('/', function() { 
+    return view('pages.index');
+});
 
-Route::get('form', function () {
+Route::get('/form', function () {
     return view('pages.form');
 });
 
