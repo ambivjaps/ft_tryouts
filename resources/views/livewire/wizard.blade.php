@@ -5,7 +5,7 @@
     </div>
     @endif
 
-    <div class="stepwizard">
+    <div class="stepwizard mb-3">
         <div class="stepwizard-row setup-panel">
             <div class="stepwizard-step">
                 <a href="#step-1" type="button" class="btn {{ $currentStep != 1 ? 'btn-secondary' : 'btn-warning' }}">1</a>
