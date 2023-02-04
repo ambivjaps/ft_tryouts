@@ -65,7 +65,7 @@
             @error('cred_cp') <div class="alert alert-danger mt-3"> {{ $message }} </div> @enderror
         </div>
         <div class="col-md-12">
-            <button class="btn btn-warning nextBtn float-end" type="button" wire:click="firstStepSubmit">Next</button>
+            <button class="btn btn-warning float-end" type="button" wire:click="firstStepSubmit">Next</button>
         </div>
     </div>
 
@@ -84,12 +84,19 @@
         </div>
         <div class="col-md-12">
             <label for="emceeDivision">Division</label>
-            <input type="text" wire:model="division" class="form-control" id="emceeDivision"/>
+            <select id="emceeDivision" wire:model="division" class="form-select">
+                <option selected>Select division</option>
+                <option>Metro Manila</option>
+                <option>Calabarzon</option>
+                <option>Central Luzon</option>
+                <option>Visayas</option>
+                <option>Mindanao</option>
+            </select>
             @error('division') <div class="alert alert-danger mt-3"> {{ $message }} </div> @enderror
         </div>
         <div class="col-md-12">
-            <button class="btn btn-warning nextBtn float-end" type="button" wire:click="secondStepSubmit">Next</button>
-            <button class="btn btn-warning nextBtn float-start" type="button" wire:click="back(1)">Back</button>
+            <button class="btn btn-warning float-end" type="button" wire:click="secondStepSubmit">Next</button>
+            <button class="btn btn-warning float-start" type="button" wire:click="back(1)">Back</button>
         </div>
     </div>
 
@@ -122,8 +129,8 @@
             @error('link_others') <div class="alert alert-danger mt-3"> {{ $message }} </div> @enderror
         </div>
         <div class="col-md-12">
-            <button class="btn btn-warning nextBtn float-end" type="button" wire:click="thirdStepSubmit">Next</button>
-            <button class="btn btn-warning nextBtn float-start" type="button" wire:click="back(2)">Back</button>
+            <button class="btn btn-warning float-end" type="button" wire:click="thirdStepSubmit">Next</button>
+            <button class="btn btn-warning float-start" type="button" wire:click="back(2)">Back</button>
         </div>
     </div>
     
@@ -204,8 +211,8 @@
                 </tr>
             </table>
             
-            <button class="btn btn-warning float-end" wire:click="submitForm" type="button">Submit application</button>
-            <button class="btn btn-warning nextBtn float-start" type="button" wire:click="back(3)">Back</button>
+            <button class="btn btn-success float-end" wire:click="submitForm" type="button">Submit application</button>
+            <button class="btn btn-warning float-start" type="button" wire:click="back(3)">Back</button>
         </div>
     </div>
 
