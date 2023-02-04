@@ -16,16 +16,14 @@
 
 @section('content')
 
-<div class="container-xxl my-3">
+<div class="container-xxl my-5">
     <div class="row justify-content-center">
-        <div class="col-md-10 my-5">
-            <div class="h-100 p-5 text-white bg-dark rounded-2 ft-poi-ins">
-                <div class="card-header">
-                    <h2 class="row justify-content-center">Tryouts Registration Form</h2>
-                </div>
-                <div class="card-body">
-                @livewire('wizard')
-                </div>
+        <div class="h-100 p-3 text-white bg-dark rounded-2 ft-poi-ins">
+            <div class="card-header">
+                <h2 class="row justify-content-center">Tryouts Registration Form</h2>
+            </div>
+            <div class="card-body">
+            @livewire('wizard')
             </div>
         </div>
     </div>
