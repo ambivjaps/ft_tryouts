@@ -18,12 +18,14 @@
 
 <div class="container-xxl my-5">
     <div class="row justify-content-center">
-        <div class="h-100 p-3 text-white bg-dark rounded-2 ft-poi-ins">
-            <div class="card-header">
-                <h2 class="row justify-content-center">Tryouts Registration Form</h2>
-            </div>
-            <div class="card-body">
-            @livewire('wizard')
+        <div class="col-md-12">
+            <div class="h-100 p-3 text-white bg-dark rounded-2 ft-poi-ins">
+                <div class="card-header">
+                    <h2 class="row justify-content-center">Tryouts Registration Form</h2>
+                </div>
+                <div class="card-body">
+                @livewire('wizard')
+                </div>
             </div>
         </div>
     </div>
