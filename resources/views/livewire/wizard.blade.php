@@ -30,13 +30,13 @@
         <hr><h4> Step#1 - Personal Information </h4>
         <small> Insert short ass disclaimer here. </small>
         <div class="col-md-6">
-            <label for="personalFirstN">First Name</label>
-            <input type="text" wire:model="first_name" class="form-control" id="personalFirstN" placeholder="Enter your first name here."/>
+            <label for="personalFirstName">First Name</label>
+            <input type="text" wire:model="first_name" class="form-control" id="personalFirstName" placeholder="Enter your first name here."/>
             @error('first_name') <div class="alert alert-danger mt-3"> {{ $message }} </div> @enderror
         </div>
         <div class="col-md-6">
             <label for="personalLastName">Last Name</label>
-            <input type="text" wire:model="last_name" class="form-control" id="personalLastN" placeholder="Enter your last name here."/>
+            <input type="text" wire:model="last_name" class="form-control" id="personalLastName" placeholder="Enter your last name here."/>
             @error('last_name') <div class="alert alert-danger mt-3"> {{ $message }} </div> @enderror
         </div>
         <div class="col-md-6">
