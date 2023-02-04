@@ -105,12 +105,12 @@
         <small> Insert short ass disclaimer here. </small>
         <div class="col-md-6">
             <label for="lyricSong">Lyrics (16 Bars for Song)</label>
-            <textarea type="text" rows="10" wire:model="lyric_song" class="form-control" id="lyricSong" placeholder="16 Bars for song, can be same as video links.">{{{ $lyric_song ?? '' }}}</textarea>
+            <textarea type="text" rows="10" wire:model="lyric_song" class="form-control" id="lyricSong" placeholder="16 Bars for song, can be same as video links."></textarea>
             @error('lyric_song') <div class="alert alert-danger mt-3"> {{ $message }} </div> @enderror
         </div>
         <div class="col-md-6">
             <label for="lyricBattle">Lyrics (16 Bars for Battle)</label>
-            <textarea type="text" rows="10" wire:model="lyric_battle" class="form-control" id="lyricBattle" placeholder="16 Bars for Imaginary battle of FlipTop Emcee, can be same as video link.">{{{ $lyric_battle ?? '' }}}</textarea>
+            <textarea type="text" rows="10" wire:model="lyric_battle" class="form-control" id="lyricBattle" placeholder="16 Bars for Imaginary battle of FlipTop Emcee, can be same as video link."></textarea>
             @error('lyric_battle') <div class="alert alert-danger mt-3"> {{ $message }} </div> @enderror
         </div>
         <div class="col-md-6">
@@ -125,7 +125,7 @@
         </div>
         <div class="col-md-12">
             <label for="linkOthers">Link (Past Music & Battles)</label>
-            <textarea type="text" rows="5" wire:model="link_others" class="form-control" id="linkOthers" placeholder="Enter links of past music/battles here.">{{{ $link_others ?? '' }}}</textarea>
+            <textarea type="text" rows="5" wire:model="link_others" class="form-control" id="linkOthers" placeholder="Enter links of past music/battles here."></textarea>
             @error('link_others') <div class="alert alert-danger mt-3"> {{ $message }} </div> @enderror
         </div>
         <div class="col-md-12">
