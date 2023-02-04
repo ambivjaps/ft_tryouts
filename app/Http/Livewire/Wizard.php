@@ -90,11 +90,11 @@ class Wizard extends Component
             'reppin' => $this->reppin,
             'division' => $this->division,
 
-            'lyric_song' => $this->lyric_song,
-            'lyric_battle' => $this->lyric_battle,
+            'lyric_song' => nl2br($this->lyric_song),
+            'lyric_battle' => nl2br($this->lyric_battle),
             'link_song' => $this->link_song,
             'link_battle' => $this->link_battle,
-            'link_others' => $this->link_others,
+            'link_others' => nl2br($this->link_others),
         ]);
    
         $this->successMessage = 'Success! Your entry has been submitted.';

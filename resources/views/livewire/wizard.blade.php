@@ -191,11 +191,11 @@
             <table class="table">
                 <tr>
                     <td>Lyrics (Song):</td>
-                    <td><strong>{{$lyric_song}}</strong></td>
+                    <td><strong><?php echo nl2br($lyric_song); ?></strong></td>
                 </tr>
                 <tr>
                     <td>Lyrics (Battle):</td>
-                    <td><strong>{{$lyric_battle}}</strong></td>
+                    <td><strong><?php echo nl2br($lyric_battle); ?></strong></td>
                 </tr>
                 <tr>
                     <td>Link (Song):</td>
@@ -206,8 +206,8 @@
                     <td><strong>{{$link_battle}}</strong></td>
                 </tr>
                 <tr>
-                    <td>Link (Others):</td>
-                    <td><strong>{{$link_others}}</strong></td>
+                    <td>Link (Past Music & Battles):</td>
+                    <td><strong><?php echo nl2br($link_others); ?></strong></td>
                 </tr>
             </table>
             
