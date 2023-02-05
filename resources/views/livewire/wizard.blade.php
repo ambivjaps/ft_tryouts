@@ -1,8 +1,8 @@
 <div>
     @if(!empty($successMessage))
-    <div class="alert alert-success">
-    {{ $successMessage }}
-    </div>
+    <script>
+        swal("Success!", "{{ $successMessage }}", "success");
+    </script>
     @endif
 
     <div class="stepwizard mb-3">
