@@ -1,7 +1,7 @@
 <div>
     @if(!empty($successMessage))
     <script>
-        swal("Success!", "{{ $successMessage }}", "success");
+        swal("Mag-ingay!", "{{ $successMessage }}", "success");
     </script>
     @endif
 

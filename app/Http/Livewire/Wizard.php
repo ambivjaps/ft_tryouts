@@ -97,7 +97,7 @@ class Wizard extends Component
             'link_others' => nl2br($this->link_others),
         ]);
    
-        $this->successMessage = 'Success! Your entry has been submitted.';
+        $this->successMessage = 'Success! Your entry has been submitted. Please wait for further announcements on our official social media pages regarding the tryouts. #FlipTop2023';
    
         $this->clearForm();
    
