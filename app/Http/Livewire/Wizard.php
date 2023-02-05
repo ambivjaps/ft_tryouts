@@ -39,6 +39,7 @@ class Wizard extends Component
         ]);
   
         $this->currentStep = 2;
+        $this->successMessage = '';
     }
    
     /**
