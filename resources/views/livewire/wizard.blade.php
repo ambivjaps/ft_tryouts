@@ -28,7 +28,7 @@
 
     <div class="row g-3 setup-content {{ $currentStep != 1 ? 'displayNone' : '' }}" id="step-1">
         <hr><h4> Step#1 - Personal Information </h4>
-        <small> Insert short ass disclaimer here. </small>
+        <small> Please enter correct personal information in the fields provided. </small>
         <div class="col-md-6">
             <label for="personalFirstName">First Name</label>
             <input type="text" wire:model="first_name" class="form-control" id="personalFirstName" placeholder="Enter your first name here."/>
@@ -71,7 +71,7 @@
 
     <div class="row g-3 setup-content {{ $currentStep != 2 ? 'displayNone' : '' }}" id="step-2">
         <hr><h4> Step#2 - Emcee Information </h4>
-        <small> Insert short ass disclaimer here. </small>
+        <small> Please enter correct emcee information in the fields provided. </small>
         <div class="col-md-12">
             <label for="emceeAlias">Alias</label>
             <input type="text" wire:model="alias" class="form-control" id="emceeAlias" placeholder="Enter your alias/emcee name here."/>
@@ -102,7 +102,7 @@
 
     <div class="row g-3 setup-content {{ $currentStep != 3 ? 'displayNone' : '' }}" id="step-3">
         <hr><h4> Step#3 - Lyrics (Song and Battle) </h4>
-        <small> Insert short ass disclaimer here. </small>
+        <small> Please enter lyrics for song and battle in the fields provided. </small>
         <div class="col-md-6">
             <label for="lyricSong">Lyrics (16 Bars for Song)</label>
             <textarea type="text" rows="10" wire:model="lyric_song" class="form-control" id="lyricSong" placeholder="16 Bars for song, can be same as video links."></textarea>
