@@ -110,22 +110,22 @@
         </div>
         <div class="col-md-6">
             <label for="lyricBattle">Lyrics (16 Bars for Battle)</label>
-            <textarea type="text" rows="10" wire:model="lyric_battle" class="form-control" id="lyricBattle" placeholder="16 Bars for Imaginary battle of FlipTop Emcee, can be same as video link."></textarea>
+            <textarea type="text" rows="10" wire:model="lyric_battle" class="form-control" id="lyricBattle" placeholder="16 Bars for imaginary battle of FlipTop Emcee, can be same as video link."></textarea>
             @error('lyric_battle') <div class="alert alert-danger mt-3"> {{ $message }} </div> @enderror
         </div>
         <div class="col-md-6">
             <label for="linkSong">Link (Song)</label>
-            <input type="text" wire:model="link_song" class="form-control" id="linkSong" placeholder="YouTube/Facebook link only. Use #FlipTopPOI7 in video post."/>
+            <input type="text" wire:model="link_song" class="form-control" id="linkSong" placeholder="YouTube/Facebook link only."/>
             @error('link_song') <div class="alert alert-danger mt-3"> {{ $message }} </div> @enderror
         </div>
         <div class="col-md-6">
             <label for="linkBattle">Link (Battle)</label>
-            <input type="text" wire:model="link_battle" class="form-control" id="linkBattle" placeholder="YouTube/Facebook link only. Use #FlipTopPOI7 in video post."/>
+            <input type="text" wire:model="link_battle" class="form-control" id="linkBattle" placeholder="YouTube/Facebook link only."/>
             @error('link_battle') <div class="alert alert-danger mt-3"> {{ $message }} </div> @enderror
         </div>
         <div class="col-md-12">
             <label for="linkOthers">Link (Past Music & Battles)</label>
-            <textarea type="text" rows="5" wire:model="link_others" class="form-control" id="linkOthers" placeholder="Enter links of past music/battles here."></textarea>
+            <textarea type="text" rows="5" wire:model="link_others" class="form-control" id="linkOthers" placeholder="Enter links of past music/battles here. YouTube/Facebook link only."></textarea>
             @error('link_others') <div class="alert alert-danger mt-3"> {{ $message }} </div> @enderror
         </div>
         <div class="col-md-12">

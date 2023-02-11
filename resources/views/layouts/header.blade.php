@@ -2,10 +2,10 @@
     <div id="ft-nav">
         <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-        <a class="navbar-brand mx-auto" href="{{ URL::asset('/') }}"><img src="{{ URL::asset('img/logo.png') }}" alt="{{ setting('site.title') }}" title="{{ setting('site.title') }}" width="130"></a>
+        <a class="navbar-brand mx-auto" href="{{ URL::asset('/') }}"><img src="{{ URL::asset('img/logo.png') }}" alt="FlipTop Battle League" title="FlipTop Battle League" width="130"></a>
             <div class="collapse navbar-collapse my-2" id="ft-menu">
             <ul class="navbar-nav main-nav mx-auto flex-row flex-wrap">
-                <li><h3>{{ setting('site.title') }}</h3></li>
+                <li><img src="{{ URL::asset('img/logo_POI7.png') }}" alt="{{ setting('site.title') }}" title="{{ setting('site.title') }}" width="90"></li>
             </ul>
             <hr class="d-md-none">
             <ul class="navbar-nav soc-nav">
