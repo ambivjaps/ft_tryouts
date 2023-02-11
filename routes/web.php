@@ -14,6 +14,7 @@ use App\Http\Controllers\ApplicantController;
 |
 */
 
+/*
 Route::get('/', function() { 
     return view('pages.index');
 });
@@ -21,6 +22,15 @@ Route::get('/', function() {
 Route::get('/form', function () {
     return view('pages.form');
 });
+*/
+
+Route::get('/', function() { 
+    return view('pages.closed');
+});
+
+/*Route::get('/form', function () {
+    return view('pages.form');
+});*/
 
 /* Voyager */
 Route::group(['prefix' => 'admin'], function () {

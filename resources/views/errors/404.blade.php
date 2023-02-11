@@ -28,7 +28,7 @@
 	<body class="d-flex flex-column min-vh-100">
 		<div class="container-xxl my-5">
 			<center>
-				<img src="{{ URL::asset('/img/ft_icon.png') }}">
+				<img class="img-fluid" src="{{ URL::asset('/img/logo_footer.png') }}">
 				<div class="ft-emcee mt-3 mb-4"><h1> ERROR 404 </h1></div>
 				<h4> Page not found. </h4>
 				<i> The page you are looking for does not exist, <br> is changed, or currently not available. </i>

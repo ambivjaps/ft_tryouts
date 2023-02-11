@@ -5,7 +5,7 @@
 @endsection
 
 @section('meta')
-<meta property="og:url"                content="https://tryouts.fliptop.com.ph" />
+<meta property="og:url"                content="https://www.tryouts.fliptop.com.ph" />
 <meta property="og:title"              content="{{ setting('site.title') }}" />
 <meta property="og:description"        content="{{ setting('site.description') }}" />
 <meta property="og:image"              content="{{ URL::asset('/img/bg_og.jpg') }}" />
@@ -24,7 +24,7 @@
                 <img src="{{ URL::asset('img/POI7_remix.png') }}" class="rounded img-fluid">
             </div>
             <div class="col-md-7">
-                <h1 class="my-3 lh-1" style="text-shadow: #000 1px 0 6px;"> #FlipTopPOI7Remix </h1><hr>
+                <h1 class="my-3 lh-1" style="text-shadow: #000 1px 0 6px;"> #POI7Remix </h1><hr>
                 <p>A. Requirements:</p>
                 <ol>
                     <li>Fill up required information.</li>
