@@ -29,10 +29,10 @@ class Wizard extends Component
     public function firstStepSubmit()
     {
         $validatedData = $this->validate([
-            'first_name' => 'required',
-            'last_name' => 'required',
+            'first_name' => 'required|min:2|max:50',
+            'last_name' => 'required|min:2|max:50',
             'bday' => 'required|date|after:01/01/1960|before:01/01/2023',
-            'address' => 'required',
+            'address' => 'required|min:5|max:100',
             
             'cred_email' => 'required|email',
             'cred_fb' => 'required',
@@ -54,6 +54,15 @@ class Wizard extends Component
 
             'cred_email.email' => 'Please enter a valid e-mail address.',
             'cred_cp.numeric' => 'Please enter a valid cellphone number.',
+
+            'first_name.max' => 'Must not be greater than 50 characters.',
+            'first_name.min' => 'Must not be less than 2 characters.',
+
+            'last_name.max' => 'Must not be greater than 50 characters.',
+            'last_name.min' => 'Must not be less than 2 characters.',
+
+            'address.max' => 'Must not be greater than 100 characters.',
+            'address.min' => 'Must not be less than 5 characters.'
         ]);
   
         $this->currentStep = 2;
@@ -68,14 +77,18 @@ class Wizard extends Component
     public function secondStepSubmit()
     {
         $validatedData = $this->validate([
-            'alias' => 'required',
-            'reppin' => 'required',
+            'alias' => 'required|max:50',
+            'reppin' => 'required|min:2|max:50',
             'division' => 'required|in:Metro Manila,Calabarzon,Central Luzon,Visayas,Mindanao',
         ],
         [
             'alias.required' => 'Alias is required.',
             'reppin.required' => 'Reppin/Affiliations is required.',
-            'division.required' => 'Please select a division.'
+            'division.required' => 'Please select a division.',
+
+            'alias.max' => 'Must not be greater than 50 characters.',
+            'reppin.max' => 'Must not be greater than 50 characters.',
+            'reppin.min' => 'Must not be less than 2 characters.'
         ]);
    
         $this->currentStep = 3;

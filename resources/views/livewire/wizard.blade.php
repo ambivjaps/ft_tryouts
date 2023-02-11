@@ -31,12 +31,12 @@
         <small> Please enter correct personal information in the fields provided. </small>
         <div class="col-md-6">
             <label for="personalFirstName">First Name</label>
-            <input type="text" wire:model="first_name" class="form-control" id="personalFirstName" placeholder="Enter your first name here." maxlength="50"/>
+            <input type="text" wire:model="first_name" class="form-control" id="personalFirstName" placeholder="Enter your first name here."/>
             @error('first_name') <div class="alert alert-danger mt-3"> {{ $message }} </div> @enderror
         </div>
         <div class="col-md-6">
             <label for="personalLastName">Last Name</label>
-            <input type="text" wire:model="last_name" class="form-control" id="personalLastName" placeholder="Enter your last name here." maxlength="50"/>
+            <input type="text" wire:model="last_name" class="form-control" id="personalLastName" placeholder="Enter your last name here."/>
             @error('last_name') <div class="alert alert-danger mt-3"> {{ $message }} </div> @enderror
         </div>
         <div class="col-md-6">
@@ -46,7 +46,7 @@
         </div>
         <div class="col-md-6">
             <label for="personalAddress">Address</label>
-            <input type="text" wire:model="address" class="form-control" id="personalAddress" placeholder="Enter your address here." maxlength="150"/>
+            <input type="text" wire:model="address" class="form-control" id="personalAddress" placeholder="Enter your address here."/>
             @error('address') <div class="alert alert-danger mt-3"> {{ $message }} </div> @enderror
         </div>
         <div class="col-md-4">
@@ -74,12 +74,12 @@
         <small> Please enter correct emcee information in the fields provided. </small>
         <div class="col-md-12">
             <label for="emceeAlias">Alias</label>
-            <input type="text" wire:model="alias" class="form-control" id="emceeAlias" placeholder="Enter your alias/emcee name here." maxlength="50"/>
+            <input type="text" wire:model="alias" class="form-control" id="emceeAlias" placeholder="Enter your alias/emcee name here."/>
             @error('alias') <div class="alert alert-danger mt-3"> {{ $message }} </div> @enderror
         </div>
         <div class="col-md-12">
             <label for="emceeReppin">Reppin</label>
-            <input type="text" wire:model="reppin" class="form-control" id="emceeReppin" placeholder="Enter your reppin/affiliations/groups here." maxlength="50"/>
+            <input type="text" wire:model="reppin" class="form-control" id="emceeReppin" placeholder="Enter your reppin/affiliations/groups here."/>
             @error('reppin') <div class="alert alert-danger mt-3"> {{ $message }} </div> @enderror
         </div>
         <div class="col-md-12">
@@ -140,7 +140,7 @@
             <p> Please review your details before submitting. </p>
 
             <h5> Personal Information </h5>
-            <table class="table">
+            <table class="table text-break">
                 <tr>
                     <td>First Name:</td>
                     <td><strong>{{ $first_name }}</strong></td>

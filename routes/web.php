@@ -15,12 +15,12 @@ use App\Http\Controllers\ApplicantController;
 */
 
 Route::get('/', function() { 
-    return view('pages.closed');
+    return view('pages.index');
 });
 
-/*Route::get('/form', function () {
+Route::get('/form', function () {
     return view('pages.form');
-});*/
+});
 
 /* Voyager */
 Route::group(['prefix' => 'admin'], function () {
