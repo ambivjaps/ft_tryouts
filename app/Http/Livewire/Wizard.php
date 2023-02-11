@@ -36,6 +36,19 @@ class Wizard extends Component
             'cred_email' => 'required|email',
             'cred_fb' => 'required',
             'cred_cp' => 'required|numeric',
+        ],
+        [
+            'first_name.required' => 'First name is required.',
+            'last_name.required' => 'Last name is required.',
+            'bday.required' => 'Birthday is required.',
+            'address.required' => 'Address is required.',
+
+            'cred_email.required' => 'E-mail Address is required.',
+            'cred_fb.required' => 'Facebook Account is required.',
+            'cred_cp.required' => 'Cellphone Number is required.',
+            
+            'cred_email.email' => 'Please enter a valid e-mail address.',
+            'cred_cp.numeric' => 'Please enter a number.'
         ]);
   
         $this->currentStep = 2;
@@ -53,6 +66,11 @@ class Wizard extends Component
             'alias' => 'required',
             'reppin' => 'required',
             'division' => 'required',
+        ],
+        [
+            'alias.required' => 'Alias is required.',
+            'reppin.required' => 'Reppin/Affiliations is required.',
+            'division.required' => 'Please select a division.'
         ]);
    
         $this->currentStep = 3;
@@ -66,6 +84,13 @@ class Wizard extends Component
             'link_song' => 'required|min:10',
             'link_battle' => 'required|min:10',
             'link_others' => 'required|min:10|max:255',
+        ],
+        [
+            'lyric_song.required' => 'Please enter 16 Bars for Song.',
+            'lyric_battle.required' => 'Please enter 16 Bars for Battle.',
+            'link_song.required' => 'Link for song is required.',
+            'link_battle.required' => 'Link for battle is required.',
+            'link_others.required' => 'Links for past music and battles is required.',
         ]);
    
         $this->currentStep = 4;
