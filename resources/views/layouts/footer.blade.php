@@ -2,7 +2,7 @@
   <div class="container">
    	<div class="row">
         <div class="col-12 col-md-3">
-        	<a href="{{ URL::asset('/') }}"><img class="mb-2" src="{{ URL::asset('img/logo.png') }}" alt="{{ setting('site.title') }}" title="{{ setting('site.title') }}"></a>
+        	<a href="{{ URL::asset('/') }}"><img class="mb-2" src="{{ URL::asset('img/logo_footer.png') }}" alt="{{ setting('site.title') }}" title="{{ setting('site.title') }}" width="110"></a>
         	<small class="d-block mb-3">{{ setting('site.description') }}</small>
           <p class="d-block mb-3 text-muted">&copy; {{ now()->year }} FlipTop Kru Corp.</p>
         </div>
