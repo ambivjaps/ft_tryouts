@@ -75,7 +75,7 @@ class Wizard extends Component
         $validatedData = $this->validate([
             'alias' => 'required',
             'reppin' => 'required',
-            'division' => 'required',
+            'division' => 'required|in:Metro Manila,Calabarzon,Central Luzon,Visayas,Mindanao',
         ],
         [
             'alias.required' => 'Alias is required.',
@@ -89,11 +89,11 @@ class Wizard extends Component
     public function thirdStepSubmit()
     {
         $validatedData = $this->validate([
-            'lyric_song' => 'required|min:100|max:3000',
-            'lyric_battle' => 'required|min:100|max:3000',
-            'link_song' => 'required|min:10',
-            'link_battle' => 'required|min:10',
-            'link_others' => 'required|min:10|max:255',
+            'lyric_song' => 'required|min:100|max:2000',
+            'lyric_battle' => 'required|min:100|max:2000',
+            'link_song' => 'required|min:10|max:100',
+            'link_battle' => 'required|min:10|max:100',
+            'link_others' => 'required|min:10|max:200',
         ],
         [
             'lyric_song.required' => 'Please enter 16 Bars for Song.',
@@ -101,6 +101,22 @@ class Wizard extends Component
             'link_song.required' => 'Link for song is required.',
             'link_battle.required' => 'Link for battle is required.',
             'link_others.required' => 'Links for past music and battles is required.',
+
+            'lyric_song.min' => 'Must not be less than 100 characters.',
+            'lyric_song.max' => 'Must not be greater than 2000 characters.',
+
+            'lyric_battle.min' => 'Must not be less than 100 characters.',
+            'lyric_battle.max' => 'Must not be greater than 2000 characters.',
+
+            'link_song.min' => 'Must not be less than 10 characters.',
+            'link_song.max' => 'Must not be greater than 100 characters.',
+
+            'link_battle.min' => 'Must not be less than 10 characters.',
+            'link_battle.max' => 'Must not be greater than 100 characters.',
+
+            'link_others.min' => 'Must not be less than 10 characters.',
+            'link_others.max' => 'Must not be greater than 200 characters.'
+            
         ]);
    
         $this->currentStep = 4;
