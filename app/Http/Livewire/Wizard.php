@@ -33,9 +33,10 @@ class Wizard extends Component
             'last_name' => 'required',
             'bday' => 'required',
             'address' => 'required',
-            'cred_email' => 'required|email',
-            'cred_fb' => 'required',
-            'cred_cp' => 'required|numeric',
+            
+            'cred_email' => 'required|email|unique:applicants',
+            'cred_fb' => 'required|unique:applicants',
+            'cred_cp' => 'required|numeric|unique:applicants',
         ],
         [
             'first_name.required' => 'First name is required.',
@@ -46,9 +47,14 @@ class Wizard extends Component
             'cred_email.required' => 'E-mail Address is required.',
             'cred_fb.required' => 'Facebook Account is required.',
             'cred_cp.required' => 'Cellphone Number is required.',
-            
+
             'cred_email.email' => 'Please enter a valid e-mail address.',
-            'cred_cp.numeric' => 'Please enter a number.'
+            'cred_email.unique' => 'This e-mail address has already been taken.',
+
+            'cred_fb.unique' => 'This Facebook account has already been taken.',
+
+            'cred_cp.numeric' => 'Please enter a valid cellphone number.',
+            'cred_cp.unique' => 'This cellphone number has already been taken.'
         ]);
   
         $this->currentStep = 2;
