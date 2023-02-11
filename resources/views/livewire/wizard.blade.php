@@ -41,7 +41,7 @@
         </div>
         <div class="col-md-6">
             <label for="personalBday">Birthday</label>
-            <input type="date" wire:model="bday" class="form-control" id="personalBday" max="2023-01-01" min="1980-01-01"/>
+            <input type="date" wire:model="bday" class="form-control" id="personalBday" max="2023-01-01" min="1960-01-01"/>
             @error('bday') <div class="alert alert-danger mt-3"> {{ $message }} </div> @enderror
         </div>
         <div class="col-md-6">

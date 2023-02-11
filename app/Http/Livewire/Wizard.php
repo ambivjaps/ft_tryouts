@@ -31,7 +31,7 @@ class Wizard extends Component
         $validatedData = $this->validate([
             'first_name' => 'required',
             'last_name' => 'required',
-            'bday' => 'required',
+            'bday' => 'required|date|after:01/01/1960|before:01/01/2023',
             'address' => 'required',
             
             'cred_email' => 'required|email|unique:applicants',
@@ -47,6 +47,10 @@ class Wizard extends Component
             'cred_email.required' => 'E-mail Address is required.',
             'cred_fb.required' => 'Facebook Account is required.',
             'cred_cp.required' => 'Cellphone Number is required.',
+
+            'bday.date' => 'Please enter a valid birthday.',
+            'bday.before' => 'Birthday must be before January 1, 2023.',
+            'bday.after' => 'Birthday must be after January 1, 1960.',
 
             'cred_email.email' => 'Please enter a valid e-mail address.',
             'cred_email.unique' => 'This e-mail address has already been taken.',
