@@ -40,7 +40,7 @@
     </div>
     <div class="my-5">
         <center>
-            <iframe class="embedvid" width="100%" height="600" src="https://www.youtube.com/embed/UK0twoDs5pY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <img src="{{ URL::asset('img/POI7_poster.jpg') }}" class="rounded img-fluid">
         </center>
     </div>
 </div>

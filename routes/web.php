@@ -14,7 +14,6 @@ use App\Http\Controllers\ApplicantController;
 |
 */
 
-/*
 Route::get('/', function() { 
     return view('pages.index');
 });
@@ -22,8 +21,8 @@ Route::get('/', function() {
 Route::get('/form', function () {
     return view('pages.form');
 });
-*/
 
+/*
 Route::get('/', function() { 
     return view('pages.closed');
 });
