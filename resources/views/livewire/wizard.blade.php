@@ -31,37 +31,37 @@
         <small> Please enter correct personal information in the fields provided. </small>
         <div class="col-md-6">
             <label for="personalFirstName">First Name</label>
-            <input type="text" wire:model="first_name" class="form-control" id="personalFirstName" placeholder="Enter your first name here."/>
+            <input type="text" wire:model="first_name" class="form-control" id="personalFirstName" placeholder="Enter your first name here." maxlength="50"/>
             @error('first_name') <div class="alert alert-danger mt-3"> {{ $message }} </div> @enderror
         </div>
         <div class="col-md-6">
             <label for="personalLastName">Last Name</label>
-            <input type="text" wire:model="last_name" class="form-control" id="personalLastName" placeholder="Enter your last name here."/>
+            <input type="text" wire:model="last_name" class="form-control" id="personalLastName" placeholder="Enter your last name here." maxlength="50"/>
             @error('last_name') <div class="alert alert-danger mt-3"> {{ $message }} </div> @enderror
         </div>
         <div class="col-md-6">
             <label for="personalBday">Birthday</label>
-            <input type="date" wire:model="bday" class="form-control" id="personalBday"/>
+            <input type="date" wire:model="bday" class="form-control" id="personalBday" max="2023-01-01" min="1980-01-01"/>
             @error('bday') <div class="alert alert-danger mt-3"> {{ $message }} </div> @enderror
         </div>
         <div class="col-md-6">
             <label for="personalAddress">Address</label>
-            <input type="text" wire:model="address" class="form-control" id="personalAddress" placeholder="Enter your address here."/>
+            <input type="text" wire:model="address" class="form-control" id="personalAddress" placeholder="Enter your address here." maxlength="150"/>
             @error('address') <div class="alert alert-danger mt-3"> {{ $message }} </div> @enderror
         </div>
         <div class="col-md-4">
             <label for="personalEmail">E-mail Address</label>
-            <input type="email" wire:model="cred_email" class="form-control" id="personalEmail" placeholder="Enter your e-mail address here."/>
+            <input type="email" wire:model="cred_email" class="form-control" id="personalEmail" placeholder="Enter your e-mail address here." maxlength="50"/>
             @error('cred_email') <div class="alert alert-danger mt-3"> {{ $message }} </div> @enderror
         </div>
         <div class="col-md-4">
             <label for="personalFB">Facebook Account</label>
-            <input type="text" wire:model="cred_fb" class="form-control" id="personalFB" placeholder="Enter your Facebook profile link here."/>
+            <input type="text" wire:model="cred_fb" class="form-control" id="personalFB" placeholder="Enter your Facebook profile link here." maxlength="50"/>
             @error('cred_fb') <div class="alert alert-danger mt-3"> {{ $message }} </div> @enderror
         </div>
         <div class="col-md-4">
             <label for="personalCP">Cellphone Number</label>
-            <input type="text" wire:model="cred_cp" class="form-control" id="personalCP" placeholder="Enter your cellphone number here."/>
+            <input type="text" wire:model="cred_cp" class="form-control" id="personalCP" placeholder="Enter your cellphone number here." maxlength="13"/>
             @error('cred_cp') <div class="alert alert-danger mt-3"> {{ $message }} </div> @enderror
         </div>
         <div class="col-md-12">
@@ -74,12 +74,12 @@
         <small> Please enter correct emcee information in the fields provided. </small>
         <div class="col-md-12">
             <label for="emceeAlias">Alias</label>
-            <input type="text" wire:model="alias" class="form-control" id="emceeAlias" placeholder="Enter your alias/emcee name here."/>
+            <input type="text" wire:model="alias" class="form-control" id="emceeAlias" placeholder="Enter your alias/emcee name here." maxlength="50"/>
             @error('alias') <div class="alert alert-danger mt-3"> {{ $message }} </div> @enderror
         </div>
         <div class="col-md-12">
             <label for="emceeReppin">Reppin</label>
-            <input type="text" wire:model="reppin" class="form-control" id="emceeReppin" placeholder="Enter your reppin/affiliations/groups here."/>
+            <input type="text" wire:model="reppin" class="form-control" id="emceeReppin" placeholder="Enter your reppin/affiliations/groups here." maxlength="50"/>
             @error('reppin') <div class="alert alert-danger mt-3"> {{ $message }} </div> @enderror
         </div>
         <div class="col-md-12">
@@ -105,27 +105,27 @@
         <small> Please enter lyrics for song and battle in the fields provided. </small>
         <div class="col-md-6">
             <label for="lyricSong">Lyrics (16 Bars for Song)</label>
-            <textarea type="text" rows="10" wire:model="lyric_song" class="form-control" id="lyricSong" placeholder="16 Bars for song, can be same as video links."></textarea>
+            <textarea type="text" rows="10" wire:model="lyric_song" class="form-control" id="lyricSong" placeholder="16 Bars for song, can be same as video links." maxlength="6000"></textarea>
             @error('lyric_song') <div class="alert alert-danger mt-3"> {{ $message }} </div> @enderror
         </div>
         <div class="col-md-6">
             <label for="lyricBattle">Lyrics (16 Bars for Battle)</label>
-            <textarea type="text" rows="10" wire:model="lyric_battle" class="form-control" id="lyricBattle" placeholder="16 Bars for imaginary battle of FlipTop Emcee, can be same as video link."></textarea>
+            <textarea type="text" rows="10" wire:model="lyric_battle" class="form-control" id="lyricBattle" placeholder="16 Bars for imaginary battle of FlipTop Emcee, can be same as video link." maxlength="6000"></textarea>
             @error('lyric_battle') <div class="alert alert-danger mt-3"> {{ $message }} </div> @enderror
         </div>
         <div class="col-md-6">
             <label for="linkSong">Link (Song)</label>
-            <input type="text" wire:model="link_song" class="form-control" id="linkSong" placeholder="YouTube/Facebook link only."/>
+            <input type="text" wire:model="link_song" class="form-control" id="linkSong" placeholder="YouTube/Facebook link only." maxlength="200"/>
             @error('link_song') <div class="alert alert-danger mt-3"> {{ $message }} </div> @enderror
         </div>
         <div class="col-md-6">
             <label for="linkBattle">Link (Battle)</label>
-            <input type="text" wire:model="link_battle" class="form-control" id="linkBattle" placeholder="YouTube/Facebook link only."/>
+            <input type="text" wire:model="link_battle" class="form-control" id="linkBattle" placeholder="YouTube/Facebook link only." maxlength="200"/>
             @error('link_battle') <div class="alert alert-danger mt-3"> {{ $message }} </div> @enderror
         </div>
         <div class="col-md-12">
             <label for="linkOthers">Link (Past Music & Battles)</label>
-            <textarea type="text" rows="5" wire:model="link_others" class="form-control" id="linkOthers" placeholder="Enter links of past music/battles here. YouTube/Facebook link only."></textarea>
+            <textarea type="text" rows="5" wire:model="link_others" class="form-control" id="linkOthers" placeholder="Enter links of past music/battles here. YouTube/Facebook link only." maxlength="200"></textarea>
             @error('link_others') <div class="alert alert-danger mt-3"> {{ $message }} </div> @enderror
         </div>
         <div class="col-md-12">
@@ -143,31 +143,31 @@
             <table class="table">
                 <tr>
                     <td>First Name:</td>
-                    <td><strong>{{$first_name}}</strong></td>
+                    <td><strong>{{ $first_name }}</strong></td>
                 </tr>
                 <tr>
                     <td>Last Name:</td>
-                    <td><strong>{{$last_name}}</strong></td>
+                    <td><strong>{{ $last_name }}</strong></td>
                 </tr>
                 <tr>
                     <td>Birthday:</td>
-                    <td><strong>{{$bday}}</strong></td>
+                    <td><strong>{{ $bday }}</strong></td>
                 </tr>
                 <tr>
                     <td>Address:</td>
-                    <td><strong>{{$address}}</strong></td>
+                    <td><strong>{{ $address }}</strong></td>
                 </tr>
                 <tr>
                     <td>E-mail Address:</td>
-                    <td><strong>{{$cred_email}}</strong></td>
+                    <td><strong>{{ $cred_email }}</strong></td>
                 </tr>
                 <tr>
                     <td>Facebook Account:</td>
-                    <td><strong>{{$cred_fb}}</strong></td>
+                    <td><strong>{{ $cred_fb }}</strong></td>
                 </tr>
                 <tr>
                     <td>Cellphone No.:</td>
-                    <td><strong>{{$cred_cp}}</strong></td>
+                    <td><strong>{{ $cred_cp }}</strong></td>
                 </tr>
             </table>
 
@@ -175,15 +175,15 @@
             <table class="table">
                 <tr>
                     <td>Alias:</td>
-                    <td><strong>{{$alias}}</strong></td>
+                    <td><strong>{{ $alias }}</strong></td>
                 </tr>
                 <tr>
                     <td>Reppin:</td>
-                    <td><strong>{{$reppin}}</strong></td>
+                    <td><strong>{{ $reppin }}</strong></td>
                 </tr>
                 <tr>
                     <td>Division:</td>
-                    <td><strong>{{$division}}</strong></td>
+                    <td><strong>{{ $division }}</strong></td>
                 </tr>
             </table>
 
@@ -199,11 +199,11 @@
                 </tr>
                 <tr>
                     <td>Link (Song):</td>
-                    <td><strong>{{$link_song}}</strong></td>
+                    <td><strong>{{ $link_song }}</strong></td>
                 </tr>
                 <tr>
                     <td>Link (Battle):</td>
-                    <td><strong>{{$link_battle}}</strong></td>
+                    <td><strong>{{ $link_battle }}</strong></td>
                 </tr>
                 <tr>
                     <td>Link (Past Music & Battles):</td>
