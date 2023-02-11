@@ -34,9 +34,9 @@ class Wizard extends Component
             'bday' => 'required|date|after:01/01/1960|before:01/01/2023',
             'address' => 'required',
             
-            'cred_email' => 'required|email|unique:applicants',
-            'cred_fb' => 'required|unique:applicants',
-            'cred_cp' => 'required|numeric|unique:applicants',
+            'cred_email' => 'required|email',
+            'cred_fb' => 'required',
+            'cred_cp' => 'required|numeric',
         ],
         [
             'first_name.required' => 'First name is required.',
@@ -53,12 +53,7 @@ class Wizard extends Component
             'bday.after' => 'Birthday must be after January 1, 1960.',
 
             'cred_email.email' => 'Please enter a valid e-mail address.',
-            'cred_email.unique' => 'This e-mail address has already been taken.',
-
-            'cred_fb.unique' => 'This Facebook account has already been taken.',
-
             'cred_cp.numeric' => 'Please enter a valid cellphone number.',
-            'cred_cp.unique' => 'This cellphone number has already been taken.'
         ]);
   
         $this->currentStep = 2;
