@@ -136,6 +136,22 @@ option {
 	color: rgb(255, 227, 100);
 }
 
+.container-xxl {
+	animation:  transitionInContainer 0.50s;
+}
+
+@keyframes transitionInContainer {
+	from {
+		opacity: 0;
+		transform:  rotateX(-15deg);
+	}
+
+	to {
+		opacity: 1;
+		transform: rotateX(0);
+	}
+}
+
 .full-height {
 height: 100vh;
 }
