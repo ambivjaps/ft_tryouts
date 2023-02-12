@@ -51,12 +51,12 @@
         </div>
         <div class="col-md-4">
             <label for="personalEmail">E-mail Address</label>
-            <input type="email" wire:model="cred_email" class="form-control" id="personalEmail" placeholder="Enter your e-mail address here." maxlength="50"/>
+            <input type="email" wire:model="cred_email" class="form-control" id="personalEmail" placeholder="Enter your e-mail address here."/>
             @error('cred_email') <div class="alert alert-danger mt-3"> {{ $message }} </div> @enderror
         </div>
         <div class="col-md-4">
             <label for="personalFB">Facebook Account</label>
-            <input type="text" wire:model="cred_fb" class="form-control" id="personalFB" placeholder="Enter your Facebook profile link here." maxlength="50"/>
+            <input type="text" wire:model="cred_fb" class="form-control" id="personalFB" placeholder="Enter your Facebook profile link here."/>
             @error('cred_fb') <div class="alert alert-danger mt-3"> {{ $message }} </div> @enderror
         </div>
         <div class="col-md-4">
