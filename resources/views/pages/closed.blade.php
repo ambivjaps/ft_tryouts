@@ -18,6 +18,19 @@
 
 <div class="container-xxl my-5">
 
+    <div class="row my-3">
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2716613754101420" crossorigin="anonymous"></script>
+      <ins class="adsbygoogle"
+            style="display:block; text-align:center;"
+            data-ad-layout="in-article"
+            data-ad-format="fluid"
+            data-ad-client="ca-pub-2716613754101420"
+            data-ad-slot="5987436965"></ins>
+      <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+
     <div class="h-100 p-5 text-white bg-dark rounded-2 ft-poi-ins">
         <div class="row">
             <div class="col-md-5">
@@ -34,6 +47,19 @@
         <center>
             <iframe class="embedvid" width="100%" height="600" src="https://www.youtube.com/embed/UK0twoDs5pY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </center>
+    </div>
+
+    <div class="row my-3">
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2716613754101420" crossorigin="anonymous"></script>
+      <ins class="adsbygoogle"
+            style="display:block; text-align:center;"
+            data-ad-layout="in-article"
+            data-ad-format="fluid"
+            data-ad-client="ca-pub-2716613754101420"
+            data-ad-slot="5987436965"></ins>
+      <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
     </div>
 </div>
 

@@ -19,6 +19,9 @@
   			gtag('config', 'G-BF26XGKX0Q');
 		</script>
 
+		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2716613754101420"
+     	crossorigin="anonymous"></script>
+
 		<link rel="icon" href="{{ URL::asset('/favicon.png') }}" type="image/x-icon"/>
 		<link rel="icon" href="{{ URL::asset('/favicon-128.png') }}" type="image/x-icon" sizes="128x128">
 		<link rel="apple-touch-icon" href="{{ URL::asset('/favicon-152.png') }}" type="image/x-icon" sizes="152×152">
