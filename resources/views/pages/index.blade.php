@@ -42,7 +42,7 @@
                 <ol>
                     <li>Fill up required information.</li>
                     <li>Prepare (1) set of 16 Bars for a Song (any topic).</li>
-                    <li>Prepare (1) set of 16 Bars for Battle against any imaginary opponent.</li>
+                    <li>Prepare (1) set of 16 Bars for Imaginary Battle of FlipTop emcee.</li>
                     <li>Prepare Audio/Video links of all previous battles, songs, and live performances.</li>
                 </ol>
                 <p>B. Deadline of submissions: <strong> March 11, 2023. </strong></p>
