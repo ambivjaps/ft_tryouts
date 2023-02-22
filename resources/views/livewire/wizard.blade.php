@@ -135,12 +135,12 @@
     </div>
     
     <div class="row setup-content {{ $currentStep != 4 ? 'displayNone' : '' }}" id="step-4">
-        <div class="col-md-12">
-            <h3> Step 4 - Review details </h3>
+        <div class="col-md-12 text-break">
+            <hr><h4> Step#4 - Review details </h4>
             <p> Please review your details before submitting. </p>
 
-            <h5> Personal Information </h5>
-            <table class="table text-break">
+            <h5 class="mt-5"> 1. Personal Information </h5>
+            <table class="table table-borderless">
                 <tr>
                     <td>First Name:</td>
                     <td><strong>{{ $first_name }}</strong></td>
@@ -171,8 +171,8 @@
                 </tr>
             </table>
 
-            <h5> Emcee Information </h5>
-            <table class="table">
+            <hr><h5> 2. Emcee Information </h5>
+            <table class="table table-borderless">
                 <tr>
                     <td>Alias:</td>
                     <td><strong>{{ $alias }}</strong></td>
@@ -187,16 +187,19 @@
                 </tr>
             </table>
 
-            <h5> Lyrics (Song and Battle) </h5>
-            <table class="table">
-                <tr>
-                    <td>Lyrics (Song):</td>
-                    <td><strong><?php echo nl2br($lyric_song); ?></strong></td>
-                </tr>
-                <tr>
-                    <td>Lyrics (Battle):</td>
-                    <td><strong><?php echo nl2br($lyric_battle); ?></strong></td>
-                </tr>
+            <hr><h5> 3. Lyrics (Song and Battle) </h5>
+            <div class="row my-3">
+                <div class="col-md-6">
+                    <p> Lyrics (Song): </p>
+                    <strong><?php echo nl2br($lyric_song); ?></strong><hr class="d-md-none">
+                </div>
+                <div class="col-md-6">
+                    <p> Lyrics (Battle): </p>
+                    <strong><?php echo nl2br($lyric_battle); ?></strong>
+                </div>
+            </div>
+
+            <table class="table table-borderless">
                 <tr>
                     <td>Link (Song):</td>
                     <td><strong>{{ $link_song }}</strong></td>
@@ -209,7 +212,7 @@
                     <td>Link (Past Music & Battles):</td>
                     <td><strong><?php echo nl2br($link_others); ?></strong></td>
                 </tr>
-            </table>
+            </table><hr>
             
             <button class="btn btn-success float-end" wire:click="submitForm" type="button">Submit application</button>
             <button class="btn btn-warning float-start" type="button" wire:click="back(3)">Back</button>
