@@ -65,7 +65,7 @@
             @error('cred_cp') <div class="alert alert-danger mt-3"> {{ $message }} </div> @enderror
         </div>
         <div class="col-md-12">
-            <button class="btn btn-warning float-end" type="button" wire:click="firstStepSubmit">Next</button>
+            <button class="btn btn-warning float-end" type="button" wire:click="firstStepSubmit">Next <i class="fas fa-caret-right text-dark"></i></button>
         </div>
     </div>
 
@@ -95,8 +95,8 @@
             @error('division') <div class="alert alert-danger mt-3"> {{ $message }} </div> @enderror
         </div>
         <div class="col-md-12">
-            <button class="btn btn-warning float-end" type="button" wire:click="secondStepSubmit">Next</button>
-            <button class="btn btn-warning float-start" type="button" wire:click="back(1)">Back</button>
+            <button class="btn btn-warning float-end" type="button" wire:click="secondStepSubmit">Next <i class="fas fa-caret-right text-dark"></i></button>
+            <button class="btn btn-warning float-start" type="button" wire:click="back(1)"><i class="fas fa-caret-left text-dark"></i> Back</button>
         </div>
     </div>
 
@@ -129,8 +129,8 @@
             @error('link_others') <div class="alert alert-danger mt-3"> {{ $message }} </div> @enderror
         </div>
         <div class="col-md-12">
-            <button class="btn btn-warning float-end" type="button" wire:click="thirdStepSubmit">Next</button>
-            <button class="btn btn-warning float-start" type="button" wire:click="back(2)">Back</button>
+            <button class="btn btn-warning float-end" type="button" wire:click="thirdStepSubmit">Next <i class="fas fa-caret-right text-dark"></i></button>
+            <button class="btn btn-warning float-start" type="button" wire:click="back(2)"><i class="fas fa-caret-left text-dark"></i> Back</button>
         </div>
     </div>
     
@@ -214,8 +214,8 @@
                 </tr>
             </table><hr>
             
-            <button class="btn btn-success float-end" wire:click="submitForm" type="button">Submit application</button>
-            <button class="btn btn-warning float-start" type="button" wire:click="back(3)">Back</button>
+            <button class="btn btn-success float-end" wire:click="submitForm" type="button"><i class="fas fa-check-square"></i> Submit application</button>
+            <button class="btn btn-warning float-start" type="button" wire:click="back(3)"><i class="fas fa-caret-left text-dark"></i> Back</button>
         </div>
     </div>
 
