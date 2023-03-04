@@ -26,7 +26,7 @@ class ApplicantsExport implements FromCollection, WithHeadings
             'Reppin',
             'Division',
             'Birthday',
-            'Hometown',
+            'Address',
             'E-mail Address',
             'Facebook Account',
             'Cellphone No.',
