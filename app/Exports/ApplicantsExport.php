@@ -19,10 +19,10 @@ class ApplicantsExport implements FromCollection, WithHeadings
     public function headings(): array
     {
         return [
-            'Applicant ID',
+            'ID',
             'First Name',
             'Last Name',
-            'Emcee Name/Alias',
+            'Alias/Emcee Name',
             'Reppin',
             'Division',
             'Birthday',
