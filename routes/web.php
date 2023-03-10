@@ -15,17 +15,14 @@ use Maatwebsite\Excel\Facades\Excel;
 |
 */
 
-Route::get('/', function() { 
-    return view('pages.index');
-});
 
-Route::get('/form', function () {
-    return view('pages.form');
+Route::get('/', function() { 
+    return view('pages.closed');
 });
 
 /*
 Route::get('/', function() { 
-    return view('pages.closed');
+    return view('pages.index');
 });
 
 /*Route::get('/form', function () {
